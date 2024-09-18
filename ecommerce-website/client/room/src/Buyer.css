@@ -1,0 +1,151 @@
+/* Container for the entire Buyer page */
+.buyer-container {
+    background-color: #f0f4f8; /* Light gray-blue background */
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Search form styling */
+  .search-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .search-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .search-form label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .search-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .search-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Cards container to hold product cards */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product image styling */
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Product name */
+  .card h2 {
+    text-align: center;
+    color: #333;
+    margin: 15px 0;
+    font-size: 1.5em;
+  }
+  
+  /* Buttons container */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  /* Interested and Like button styling */
+  .interested-button, .like-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .interested-button:hover, .like-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .like-count {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Product details section */
+  .product-details {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.4;
+  }
+  
