@@ -1,0 +1,104 @@
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .results-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .results-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Delete Button Styling */
+  .delete {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete:hover {
+    background-color: #cc0000;
+    color: white;
+  }
+  
+  /* General Button Styling */
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Table */
+  @media screen and (max-width: 768px) {
+    .results-table thead {
+      display: none;
+    }
+  
+    .results-table, 
+    .results-table tbody, 
+    .results-table tr, 
+    .results-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .results-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .results-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .results-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
