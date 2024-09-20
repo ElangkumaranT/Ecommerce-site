@@ -3,8 +3,14 @@ const cors=require('cors');
 const app=express();
 const userModel=require('./models/Db');
 const sellerModel = require('./models/Dbs');
-
-app.use(cors())
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    credentials: true, 
+  };
+  
+  app.use(cors(corsOptions));
+// app.use(cors())
 app.use(express.json());
 
 
