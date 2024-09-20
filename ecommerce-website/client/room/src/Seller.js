@@ -33,7 +33,7 @@ function Seller() {
     e.preventDefault();
     setSubmitted(true);
 
-    axios.post('http://localhost:3001/saves', {
+    axios.post('https://ecommerce-site-backend-nine.vercel.app/saves', {
       name,
       email,
       phone,

@@ -12,7 +12,7 @@ function Register() {
   const submit = (e) => {
     e.preventDefault(); 
     setMess(true);
-    axios.post('http://localhost:3001/save', { firstName, lastName, email, phone })
+    axios.post('https://ecommerce-site-backend-nine.vercel.app/save', { firstName, lastName, email, phone })
       .then((response) => {
         console.log(response);
       })

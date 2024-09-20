@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/EKroom");
+mongoose.connect("mongodb+srv://elangouser:elango%40143@elangocsd.vuq8ykq.mongodb.net/EKroom");
 
 const userSchema = new mongoose.Schema({
     firstName: {
@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     },
     phone: {
         type: String,
-        required: true
+        required: false
     }
 });
 

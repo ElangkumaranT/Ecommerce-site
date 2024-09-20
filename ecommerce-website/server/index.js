@@ -3,6 +3,7 @@ const cors=require('cors');
 const app=express();
 const userModel=require('./models/Db');
 const sellerModel = require('./models/Dbs');
+
 app.use(cors())
 app.use(express.json());
 

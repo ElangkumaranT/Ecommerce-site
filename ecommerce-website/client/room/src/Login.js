@@ -17,7 +17,7 @@ function Buyer() {
  
 
   function delet(id) {
-    axios.delete(`http://localhost:3001/delete/${id}`)
+    axios.delete(`https://ecommerce-site-backend-nine.vercel.app/delete/${id}`)
       .then(response => {
         console.log(response.data.message);
         setItems(prevItems => prevItems.filter(item => item._id !== id));
@@ -28,7 +28,7 @@ function Buyer() {
   
   
   useEffect(() => {
-    axios.get('http://localhost:3001/view')
+    axios.get('https://ecommerce-site-backend-nine.vercel.app/view')
       .then(response => {
         setItems(response.data);
       })

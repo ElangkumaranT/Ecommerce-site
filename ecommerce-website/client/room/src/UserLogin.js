@@ -14,7 +14,7 @@ function UserLogin() {
     const[items, setItems] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/views')
+        axios.get('https://ecommerce-site-backend-nine.vercel.app/views')
           .then(response => {
             setItems(response.data);
           })

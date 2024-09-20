@@ -13,7 +13,7 @@ function Buyer() {
   const [visibleDetails, setVisibleDetails] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/view')
+    axios.get('https://ecommerce-site-backend-nine.vercel.app/view')
       .then(response => {
         setItems(response.data);
       })
@@ -36,7 +36,7 @@ function Buyer() {
   };
 
   const change = (id, like) => {
-    axios.put('http://localhost:3001/update', { id, "like": like + 1 })
+    axios.put('https://ecommerce-site-backend-nine.vercel.app/update', { id, "like": like + 1 })
       .then(response => {
         setItems(items.map(item => 
           item._id === id ? { ...item, like: like + 1 } : item
